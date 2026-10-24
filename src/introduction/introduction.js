@@ -23,7 +23,7 @@ function Introduction(){
                  <br></br>
                  If you're interested in a deeper look at my journey, experience, and skill set, you’re just a click away.
              </div>
-             <div className="Button"><button>Download Resume</button></div>
+             <div className="Button"><a href="/Arya Mayekar Resume.pdf" download="Arya Mayekar Resume.pdf"><button>Download Resume</button></a></div>
           </div>
           <div className={`PhotoArea ${myElementIsVisible2 ? 'visible2' : ''}`} ref={myRefPhotoArea}><img src={IntroPhoto} alt=""></img></div>
       </div>
