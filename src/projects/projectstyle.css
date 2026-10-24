@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+*{
+    padding: 0px;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins","Roboto", sans-serif;
+    text-decoration: none;
+}
+
+body{
+    background-color: var(--mainColor);
+    overflow-x: hidden;
+}
+
+:root{
+    --mainColor: #FFFCF2;
+    --cardcolor:#252422;
+    --buttoncolor:#EB5E28;
+    --navColor:#FDFDFD;
+    --smalltextcolor:#e0d8ca;
+}
+
+.ProjectMainBox{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20vh;
+}
+
+.Project_Title{
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Poppins";
+    font-size: 50px;
+    font-weight: 800;
+    color: var(--buttoncolor);
+}
+
+.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.Solo_Projects{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Project_Type_Heading{
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 3.75rem;
+    padding-top: 2.75rem;
+    padding-bottom: 2.75rem;
+}
+
+.visible2 {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.Heading_Name{
+    width: 100%;
+    display: flex;
+    font-family: "Poppins";
+    font-size: 40px;
+    font-weight: 800;
+    color: var(--cardcolor);
+}
+
+
+
+hr{
+    width: 25rem;
+    height: 6px;
+    background-color: #333;
+    border-radius: 6px;
+    border: none;
+}
+
+.Project_Cards_Container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;              /* Allow multiple rows */
+    justify-content: center;      /* Center cards horizontally */
+    gap: 50px;                    /* Space between cards */
+}
+
+
+
+.Project_Photo{
+    width: 100%;
+    height: 45%;
+    background-color: var(--cardcolor);
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    margin: 0;
+    padding: 0%;
+    border: none;
+}
+
+.Project_Photo img{
+    height: 100%;
+    width: 100%;
+}
+
+.Card{
+    opacity: 0;
+    transition: opacity 3s ease-out; 
+    width: 32%;
+    height:45.8125rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 40px;
+    cursor: pointer;
+    border: none;
+}
+
+.visible3 {
+  opacity: 1;
+}
+
+.Card:hover{
+   transform: scale(1.05); 
+   transition: all 0.3s ease-in-out;
+}
+
+.All_Project_Info{
+    width: 100%;
+    height: 55%;
+    gap: 15px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: var(--cardcolor);
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+  
+}
+
+.Project_Name{
+    width: 95%;
+    height: 15%;
+    font-family: "Poppins";
+    font-size: 36px;
+    font-weight: 800;
+    color: var(--mainColor);
+    text-wrap: balance;
+}
+
+.Project_Details{
+    width: 95%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    font-family: "Roboto";
+    font-size: 20px;
+    font-weight: 300;
+    color: var(--smalltextcolor);
+    text-wrap: balance;
+    text-align: justify;
+}
+
+.Github_Link{
+    width: 95%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+}
+
+.Github_Link a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-details-submit-btn{
+    height: 80%;
+    width: 90%;
+    background-color: var(--buttoncolor);
+    color: var(--mainColor);
+    font-size: 18px;
+    font-weight: 600;
+    font-family: "Poppins";
+    border: none;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.user-details-submit-btn:hover{
+    transform: scale(1.03);
+    
+}
+
+@media (max-width: 480px) {
+
+    .ProjectMainBox{
+    margin-bottom: 10vh;
+    }
+   
+    .Project_Title{
+    font-size: 24px;
+    }
+    
+    .Project_Type_Heading{
+    padding-left: 1.5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    }
+
+    .Heading_Name{
+    font-size: 20px;
+    }
+
+    hr{
+    width: 10rem;
+    height: 6px;
+    background-color: var(--cardcolor);
+    border-radius: 6px;
+    border: none;
+    }
+    
+    .Card{
+    width: 80%;
+    height:33.8125rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 40px;
+    }
+
+    .Project_Photo{
+    width: 100%;
+    height: 45%;
+    }
+
+    .All_Project_Info{
+    width: 100%;
+    height: 55%;
+    gap: 5px;
+    padding: 10px;
+   }
+
+   .Project_Name{
+    height: 10%;
+    font-size: 20px;
+   }
+
+    .Project_Details{
+    font-size: 14px;
+    height: 55%;
+    }
+
+    .user-details-submit-btn{
+    font-size: 14px;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1280px) {
+    .ProjectMainBox{
+    margin-bottom: 10vh;
+    }
+
+    .Project_Title{
+    font-size: 30px;
+    }
+    
+    .Heading_Name{
+    font-size: 25px;
+    }
+    
+    hr{
+    width: 14rem;
+    }
+    
+    .Card{
+    width: 40%;
+    height:45.8125rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 40px;
+    }
+    
+    .Project_Name{
+    height: 10%;
+    font-size: 28px;
+   }
+   
+    .Project_Details{
+    font-size: 20px;
+    height: 55%;
+    }
+    
+    .user-details-submit-btn{
+    font-size: 18px;
+    }
+
+}
